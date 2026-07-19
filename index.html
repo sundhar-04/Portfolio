@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sundharesan A | AI & Data Science Portfolio</title>
+  <meta name="description" content="Portfolio of Sundharesan A – AI & Data Science student, DevOps Intern, and competitive programmer. Explore projects in AI, ML, FastAPI, React Native, and more." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Sundharesan A | AI & Data Science Portfolio" />
+  <meta property="og:description" content="AI & Data Science student building intelligent systems." />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>S</text></svg>" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <script>document.documentElement.classList.remove('no-js');</script>
+  <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+</head>
+<body>
+  <!-- ═══ NAVIGATION ═══ -->
+  <nav class="nav" id="navbar">
+    <div class="container nav-inner">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-dot"></span>
+        <span>Sundharesan</span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#about" class="nav-link" data-section="about">About</a>
+        <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+        <a href="#experience" class="nav-link" data-section="experience">Experience</a>
+        <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+        <a href="#achievements" class="nav-link" data-section="achievements">Achievements</a>
+        <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+        <a href="Sundharesan_Resume.pdf" target="_blank" class="nav-cta desktop-only">Hire Me</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#about" class="nav-link" data-mobile-link>About</a>
+    <a href="#skills" class="nav-link" data-mobile-link>Skills</a>
+    <a href="#experience" class="nav-link" data-mobile-link>Experience</a>
+    <a href="#projects" class="nav-link" data-mobile-link>Projects</a>
+    <a href="#achievements" class="nav-link" data-mobile-link>Achievements</a>
+    <a href="#contact" class="nav-link" data-mobile-link>Contact</a>
+    <a href="Sundharesan_Resume.pdf" target="_blank" class="btn btn-primary">Hire Me</a>
+  </div>
+
+  <!-- ═══ HERO ═══ -->
+  <section class="hero" id="hero">
+    <canvas id="hero-canvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-badge">
+          <span class="status-dot"></span>
+          <span class="label-eyebrow" style="color: var(--accent-green); letter-spacing: 0.1em;">Available for Opportunities</span>
+        </div>
+        <h1 class="heading-xl hero-title">
+          Hi, I'm<br />
+          <span class="gradient-text">Sundharesan A</span>
+        </h1>
+        <p class="hero-subtitle">
+          <span class="typewriter" id="typewriter"></span>
+        </p>
+        <p class="hero-description">
+          B.Tech AI & Data Science student at Saranathan College of Engineering, currently building intelligent systems as a DevOps Intern at Springer Capital.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><polyline points="13 2 13 9 20 9"/></svg>
+            View Projects
+          </a>
+          <a href="mailto:iamsundhar04@gmail.com" class="btn btn-outline">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Get in Touch
+          </a>
+        </div>
+      </div>
+      <div class="hero-3d" id="hero3d">
+        <div class="hero-photo-wrapper">
+          <div class="hero-photo-ring"></div>
+          <div class="hero-photo-ring ring-2"></div>
+          <img src="image.png" alt="Sundharesan A" class="hero-photo" />
+          <div class="hero-photo-glow"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ ABOUT ═══ -->
+  <section class="about" id="about">
+    <div class="section-divider">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,0 L720,80 L1440,0 L1440,0 L0,0 Z" fill="var(--bg-primary)"></path></svg>
+    </div>
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="label-eyebrow">About Me</p>
+        <h2 class="heading-lg">Building the Future with <span class="gradient-text">AI & Code</span></h2>
+        <p class="section-desc">Passionate about leveraging artificial intelligence and modern engineering practices to solve real-world problems.</p>
+      </div>
+      <div class="about-grid">
+        <div class="reveal-left">
+          <div class="about-avatar">
+            <img src="image.png" alt="Sundharesan A" />
+          </div>
+          <div class="about-stats" style="margin-top: var(--space-lg);">
+            <div class="stat-card reveal" style="--i: 0">
+              <div class="stat-number gradient-text">8.02</div>
+              <div class="stat-label">CGPA</div>
+            </div>
+            <div class="stat-card reveal" style="--i: 1">
+              <div class="stat-number gradient-text">100+</div>
+              <div class="stat-label">DSA Problems</div>
+            </div>
+            <div class="stat-card reveal" style="--i: 2">
+              <div class="stat-number gradient-text">3+</div>
+              <div class="stat-label">AI Projects</div>
+            </div>
+          </div>
+        </div>
+        <div class="reveal-right">
+          <p class="about-bio">
+            I'm a third-year B.Tech student specializing in Artificial Intelligence and Data Science at Saranathan College of Engineering, Trichy. With a strong foundation in computer science fundamentals — from data structures and algorithms to operating systems and networks — I combine theoretical depth with hands-on engineering.
+          </p>
+          <p class="about-bio">
+            Currently interning as a DevOps Engineer at Springer Capital, where I automate operational workflows, optimize CI/CD pipelines, and research cost-effective open-source infrastructure solutions. I'm driven by the intersection of AI innovation and robust software engineering.
+          </p>
+          <div class="about-info-cards">
+            <div class="info-card" style="--i: 0">
+              <div class="info-card-header">
+                <div class="info-card-icon edu">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.66 2.69 3 6 3s6-1.34 6-3v-5"/></svg>
+                </div>
+                <div>
+                  <div class="heading-sm">B.Tech – AI & Data Science</div>
+                  <div class="text-sm">Saranathan College of Engineering · 2024–2028 · CGPA: 8.02</div>
+                </div>
+              </div>
+            </div>
+            <div class="info-card" style="--i: 1">
+              <div class="info-card-header">
+                <div class="info-card-icon edu">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                </div>
+                <div>
+                  <div class="heading-sm">Higher Secondary – 92%</div>
+                  <div class="text-sm">National College Higher Secondary School · 2024</div>
+                </div>
+              </div>
+            </div>
+            <div class="info-card" style="--i: 2">
+              <div class="info-card-header">
+                <div class="info-card-icon work">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                </div>
+                <div>
+                  <div class="heading-sm">DevOps Intern</div>
+                  <div class="text-sm">Springer Capital · Feb 2026 – June 2026</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SKILLS ═══ -->
+  <section class="skills" id="skills">
+    <div class="section-divider">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,80 Q360,0 720,40 T1440,0 L1440,0 L0,0 Z" fill="var(--bg-secondary)"></path></svg>
+    </div>
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="label-eyebrow">Technical Arsenal</p>
+        <h2 class="heading-lg">Skills & <span class="gradient-text">Technologies</span></h2>
+        <p class="section-desc">A diverse toolkit spanning AI, full-stack development, cloud infrastructure, and competitive programming.</p>
+      </div>
+      <div class="skills-grid stagger-children">
+        <!-- Languages -->
+        <div class="skill-category reveal" style="--i: 0; --cat-color: var(--accent-blue); --cat-color-light: var(--accent-blue-light); --cat-color-glow: var(--accent-blue-glow);">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <div class="skill-cat-title">Languages</div>
+          </div>
+          <div class="skill-items" data-animate-bars>
+            <div class="skill-item"><span class="skill-name">Python</span><div class="skill-bar-wrapper"><div class="skill-bar" data-width="92"></div></div><span class="skill-percent">92%</span></div>
+            <div class="skill-item"><span class="skill-name">JavaScript</span><div class="skill-bar-wrapper"><div class="skill-bar" data-width="85"></div></div><span class="skill-percent">85%</span></div>
+            <div class="skill-item"><span class="skill-name">TypeScript</span><div class="skill-bar-wrapper"><div class="skill-bar" data-width="78"></div></div><span class="skill-percent">78%</span></div>
+            <div class="skill-item"><span class="skill-name">Java</span><div class="skill-bar-wrapper"><div class="skill-bar" data-width="80"></div></div><span class="skill-percent">80%</span></div>
+            <div class="skill-item"><span class="skill-name">C++</span><div class="skill-bar-wrapper"><div class="skill-bar" data-width="75"></div></div><span class="skill-percent">75%</span></div>
+          </div>
+        </div>
+        <!-- AI & ML -->
+        <div class="skill-category reveal" style="--i: 1; --cat-color: var(--accent-purple); --cat-color-light: var(--accent-purple-light); --cat-color-glow: var(--accent-purple-glow);">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><path d="M12 2a4 4 0 0 1 4 4c0 1.1-.5 2.1-1.2 2.8L12 12l-2.8-3.2A4 4 0 0 1 12 2z"/><path d="M12 12v10"/><path d="M5 19c0-3 2-5 7-5s7 2 7 5"/></svg>
+            </div>
+            <div class="skill-cat-title">AI & Machine Learning</div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Model Training</span>
+            <span class="skill-tag">Model Deployment</span>
+            <span class="skill-tag">AI Agents</span>
+            <span class="skill-tag">Predictive Analytics</span>
+            <span class="skill-tag">Deep Learning</span>
+            <span class="skill-tag">TensorFlow</span>
+          </div>
+        </div>
+        <!-- Core CS -->
+        <div class="skill-category reveal" style="--i: 2; --cat-color: var(--accent-green); --cat-color-light: var(--accent-green-light); --cat-color-glow: var(--accent-green-glow);">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+            </div>
+            <div class="skill-cat-title">Core CS Fundamentals</div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Data Structures & Algorithms</span>
+            <span class="skill-tag">Object-Oriented Programming</span>
+            <span class="skill-tag">Operating Systems</span>
+            <span class="skill-tag">Computer Networks</span>
+            <span class="skill-tag">REST APIs</span>
+          </div>
+        </div>
+        <!-- Frameworks -->
+        <div class="skill-category reveal" style="--i: 3; --cat-color: var(--accent-orange); --cat-color-light: var(--accent-orange-light); --cat-color-glow: var(--accent-orange-glow);">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </div>
+            <div class="skill-cat-title">Frameworks & Libraries</div>
+          </div>
+          <div class="skill-items" data-animate-bars>
+            <div class="skill-item"><span class="skill-name">React Native</span><div class="skill-bar-wrapper"><div class="skill-bar" data-width="85"></div></div><span class="skill-percent">85%</span></div>
+            <div class="skill-item"><span class="skill-name">FastAPI</span><div class="skill-bar-wrapper"><div class="skill-bar" data-width="88"></div></div><span class="skill-percent">88%</span></div>
+            <div class="skill-item"><span class="skill-name">Expo</span><div class="skill-bar-wrapper"><div class="skill-bar" data-width="82"></div></div><span class="skill-percent">82%</span></div>
+            <div class="skill-item"><span class="skill-name">TensorFlow</span><div class="skill-bar-wrapper"><div class="skill-bar" data-width="78"></div></div><span class="skill-percent">78%</span></div>
+          </div>
+        </div>
+        <!-- Cloud & DevOps -->
+        <div class="skill-category reveal" style="--i: 4; --cat-color: var(--accent-cyan); --cat-color-light: #22D3EE; --cat-color-glow: rgba(6, 182, 212, 0.3);">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+            </div>
+            <div class="skill-cat-title">Cloud & DevOps</div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">CI/CD Pipelines</span>
+            <span class="skill-tag">Containerization</span>
+            <span class="skill-tag">API Development</span>
+            <span class="skill-tag">System Monitoring</span>
+            <span class="skill-tag">Docker</span>
+          </div>
+        </div>
+        <!-- Developer Tools -->
+        <div class="skill-category reveal" style="--i: 5; --cat-color: var(--accent-gold); --cat-color-light: var(--accent-gold-light); --cat-color-glow: var(--accent-gold-glow);">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            </div>
+            <div class="skill-cat-title">Developer Tools</div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Linux</span>
+            <span class="skill-tag">Postman</span>
+            <span class="skill-tag">n8n</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ EXPERIENCE ═══ -->
+  <section class="experience" id="experience">
+    <div class="section-divider">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,0 C480,80 960,80 1440,0 L1440,0 L0,0 Z" fill="var(--bg-primary)"></path></svg>
+    </div>
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="label-eyebrow">Work Experience</p>
+        <h2 class="heading-lg">Where I've <span class="gradient-text">Contributed</span></h2>
+        <p class="section-desc">Real-world engineering experience driving efficiency and reliability in production systems.</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">February 2026 – June 2026</span>
+            <h3 class="timeline-role">DevOps Intern</h3>
+            <p class="timeline-company">Springer Capital</p>
+            <ul class="timeline-bullets">
+              <li>Automated operational workflows using scripting, reducing manual intervention in deployment and monitoring processes.</li>
+              <li>Researched and proposed open-source alternatives to paid tools, evaluating feasibility and documenting implementation plans to reduce infrastructure costs.</li>
+              <li>Assisted in maintaining CI/CD pipelines and infrastructure reliability, collaborating with engineering teams to improve software delivery.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ PROJECTS ═══ -->
+  <section class="projects" id="projects">
+    <div class="section-divider">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,80 L480,0 L960,60 L1440,0 L1440,0 L0,0 Z" fill="var(--bg-secondary)"></path></svg>
+    </div>
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="label-eyebrow">Featured Projects</p>
+        <h2 class="heading-lg">Things I've <span class="gradient-text">Built</span></h2>
+        <p class="section-desc">AI-powered applications solving real problems — from healthcare to cybersecurity to IT operations.</p>
+      </div>
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card reveal-scale" style="--i: 0; --project-color: var(--accent-green-glow); --project-color-alt: var(--accent-blue-glow);">
+          <div class="project-card-header">
+            <div class="project-card-bg">
+              <div class="project-pattern"></div>
+              <span class="project-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+              </span>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-card-title">AI-Powered Eye & Tongue Disease Detection</h3>
+            <p class="project-card-desc">Deep learning-powered mobile app for multi-class disease classification with real-time AI diagnostics.</p>
+            <ul class="project-card-bullets">
+              <li>Trained & deployed custom deep learning models for multi-class disease classification</li>
+              <li>Built FastAPI backend with unified inference API supporting multiple prediction models</li>
+              <li>React Native mobile app with scan history, prediction reports, and AI medical assistant</li>
+            </ul>
+            <div class="project-tech-tags">
+              <span class="project-tech-tag">TensorFlow</span>
+              <span class="project-tech-tag">FastAPI</span>
+              <span class="project-tech-tag">React Native</span>
+              <span class="project-tech-tag">Deep Learning</span>
+            </div>
+          </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="project-card reveal-scale" style="--i: 1; --project-color: var(--accent-purple-glow); --project-color-alt: var(--accent-orange-glow);">
+          <div class="project-card-header">
+            <div class="project-card-bg">
+              <div class="project-pattern"></div>
+              <span class="project-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </span>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-card-title">AI Security Investigation & Auto-Remediation</h3>
+            <p class="project-card-desc">Enterprise-scale AI-driven SecOps platform for automated vulnerability investigation and incident analysis.</p>
+            <ul class="project-card-bullets">
+              <li>Designed AI-driven SecOps workflow automating vulnerability investigation at enterprise scale</li>
+              <li>Integrated intelligent agents for vulnerability discovery, alert validation, and continuous learning</li>
+              <li>Automated remediation recommendations, significantly reducing manual security triage</li>
+            </ul>
+            <div class="project-tech-tags">
+              <span class="project-tech-tag">AI Agents</span>
+              <span class="project-tech-tag">Security</span>
+              <span class="project-tech-tag">Automation</span>
+              <span class="project-tech-tag">Python</span>
+            </div>
+          </div>
+        </div>
+        <!-- Project 3 -->
+        <div class="project-card reveal-scale" style="--i: 2; --project-color: var(--accent-blue-glow); --project-color-alt: rgba(6,182,212,0.3);">
+          <div class="project-card-header">
+            <div class="project-card-bg">
+              <div class="project-pattern"></div>
+              <span class="project-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 9h6v6H9z"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 14h3M1 9h3M1 14h3"/></svg>
+              </span>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-card-title">AI-Powered ITOps Assistant — Beak AI Studio</h3>
+            <p class="project-card-desc">Intelligent operations assistant for real-time log analysis, anomaly detection, and infrastructure forecasting.</p>
+            <ul class="project-card-bullets">
+              <li>Built intelligent ops assistant for real-time log analysis and anomaly detection</li>
+              <li>Implemented predictive analytics anticipating infrastructure failures proactively</li>
+              <li>Generated proactive remediation alerts before incidents occur</li>
+            </ul>
+            <div class="project-tech-tags">
+              <span class="project-tech-tag">Predictive Analytics</span>
+              <span class="project-tech-tag">Log Analysis</span>
+              <span class="project-tech-tag">AI</span>
+              <span class="project-tech-tag">Monitoring</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CERTIFICATIONS / COURSEWORK ═══ -->
+  <section class="certifications" id="certifications">
+    <div class="section-divider">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,0 Q720,80 1440,0 L1440,0 L0,0 Z" fill="var(--bg-primary)"></path></svg>
+    </div>
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="label-eyebrow">Relevant Coursework</p>
+        <h2 class="heading-lg">Academic <span class="gradient-text">Foundation</span></h2>
+        <p class="section-desc">Core computer science disciplines that power my engineering mindset.</p>
+      </div>
+      <div class="coursework-grid stagger-children">
+        <div class="coursework-tag reveal" style="--i: 0">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h18v18H3zM12 8v8M8 12h8"/></svg>
+          <span>Data Structures & Algorithms</span>
+        </div>
+        <div class="coursework-tag reveal" style="--i: 1">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+          <span>Object-Oriented Programming</span>
+        </div>
+        <div class="coursework-tag reveal" style="--i: 2">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+          <span>Database Management Systems</span>
+        </div>
+        <div class="coursework-tag reveal" style="--i: 3">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          <span>Operating Systems</span>
+        </div>
+        <div class="coursework-tag reveal" style="--i: 4">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          <span>Computer Networks</span>
+        </div>
+        <div class="coursework-tag reveal" style="--i: 5">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a4 4 0 0 1 4 4c0 1.1-.5 2.1-1.2 2.8L12 12l-2.8-3.2A4 4 0 0 1 12 2z"/><path d="M12 12v10"/><path d="M5 19c0-3 2-5 7-5s7 2 7 5"/></svg>
+          <span>Machine Learning</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ ACHIEVEMENTS – Horizontal Marquee ═══ -->
+  <section class="achievements" id="achievements">
+    <div class="section-divider">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,80 C360,0 1080,0 1440,80 L1440,0 L0,0 Z" fill="var(--bg-secondary)"></path></svg>
+    </div>
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="label-eyebrow">Achievements</p>
+        <h2 class="heading-lg">Milestones & <span class="gradient-text">Recognition</span></h2>
+        <p class="section-desc">Key wins and accomplishments in hackathons, competitive programming, and showcases.</p>
+      </div>
+    </div>
+    <div class="achievements-carousel">
+      <div class="achievements-row" id="achievementsRow">
+        <div class="achievement-card-3d" style="--card-accent: var(--accent-gold); --card-glow: var(--accent-gold-glow);">
+          <div class="achievement-card-inner">
+            <div class="achievement-card-front">
+              <div class="achievement-icon-wrap gold">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+              </div>
+              <h3 class="achievement-title">JET Hackathon Winner</h3>
+              <p class="achievement-desc">Won the Coding and Debugging Track at the JET Hackathon, competing against talented programmers.</p>
+            </div>
+            <div class="achievement-card-back">
+              <div class="achievement-back-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </div>
+              <p class="achievement-back-text">1st Place — Coding & Debugging</p>
+            </div>
+          </div>
+        </div>
+        <div class="achievement-card-3d" style="--card-accent: var(--accent-blue); --card-glow: var(--accent-blue-glow);">
+          <div class="achievement-card-inner">
+            <div class="achievement-card-front">
+              <div class="achievement-icon-wrap blue">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/><line x1="14" y1="4" x2="10" y2="20"/></svg>
+              </div>
+              <h3 class="achievement-title">100+ LeetCode Problems</h3>
+              <p class="achievement-desc">Solved 100+ Data Structures and Algorithms problems, building strong problem-solving foundations.</p>
+            </div>
+            <div class="achievement-card-back">
+              <div class="achievement-back-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              </div>
+              <p class="achievement-back-text">Arrays, Trees, Graphs, DP & more</p>
+            </div>
+          </div>
+        </div>
+        <div class="achievement-card-3d" style="--card-accent: var(--accent-green); --card-glow: var(--accent-green-glow);">
+          <div class="achievement-card-inner">
+            <div class="achievement-card-front">
+              <div class="achievement-icon-wrap green">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+              </div>
+              <h3 class="achievement-title">MediScan Showcase</h3>
+              <p class="achievement-desc">Presented MediScan, an AI-powered healthcare assistant, as part of a 3-member team at a college-level showcase.</p>
+            </div>
+            <div class="achievement-card-back">
+              <div class="achievement-back-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+              </div>
+              <p class="achievement-back-text">AI Healthcare — Team of 3</p>
+            </div>
+          </div>
+        </div>
+        <div class="achievement-card-3d" style="--card-accent: var(--accent-purple); --card-glow: var(--accent-purple-glow);">
+          <div class="achievement-card-inner">
+            <div class="achievement-card-front">
+              <div class="achievement-icon-wrap purple">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <h3 class="achievement-title">Competitive Programming</h3>
+              <p class="achievement-desc">Active participant in competitive programming contests, targeting Codeforces problem sets for continuous growth.</p>
+            </div>
+            <div class="achievement-card-back">
+              <div class="achievement-back-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg>
+              </div>
+              <p class="achievement-back-text">Codeforces & Contest Solver</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CONTACT ═══ -->
+  <section class="contact" id="contact">
+    <div class="section-divider">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,0 L720,80 L1440,0 L1440,0 L0,0 Z" fill="var(--bg-primary)"></path></svg>
+    </div>
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="label-eyebrow">Get in Touch</p>
+        <h2 class="heading-lg">Let's <span class="gradient-text">Connect</span></h2>
+        <p class="section-desc">Open to internships, collaborations, and exciting opportunities in AI and software engineering.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info stagger-children">
+          <a href="tel:+919345312205" class="contact-item reveal" style="--i: 0">
+            <div class="contact-icon phone">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div>
+              <div class="contact-detail-label">Phone</div>
+              <div class="contact-detail-value">+91 9345312205</div>
+            </div>
+          </a>
+          <a href="mailto:iamsundhar04@gmail.com" class="contact-item reveal" style="--i: 1">
+            <div class="contact-icon email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <div class="contact-detail-label">Email</div>
+              <div class="contact-detail-value">iamsundhar04@gmail.com</div>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/sundharesan-a-884a1b328" target="_blank" rel="noopener" class="contact-item reveal" style="--i: 2">
+            <div class="contact-icon linkedin">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </div>
+            <div>
+              <div class="contact-detail-label">LinkedIn</div>
+              <div class="contact-detail-value">sundharesan-a</div>
+            </div>
+          </a>
+          <a href="https://github.com/sundhar-04" target="_blank" rel="noopener" class="contact-item reveal" style="--i: 3">
+            <div class="contact-icon github">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            </div>
+            <div>
+              <div class="contact-detail-label">GitHub</div>
+              <div class="contact-detail-value">sundhar-04</div>
+            </div>
+          </a>
+        </div>
+        <div class="contact-cta-wrapper reveal">
+          <h3 class="contact-cta-title">Ready to build<br /><span class="gradient-text">something amazing?</span></h3>
+          <p class="contact-cta-desc">I'm always excited to discuss new ideas, collaborate on projects, or explore opportunities. Let's talk!</p>
+          <a href="mailto:iamsundhar04@gmail.com?subject=Let%27s%20Connect%20-%20Portfolio%20Inquiry&body=Hi%20Sundharesan%2C%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20love%20to%20connect.%0A%0A" class="btn btn-primary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            Send a Message
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-text">&copy; 2026 Sundharesan A. Crafted with passion & code.</p>
+      <div class="footer-socials">
+        <a href="https://github.com/sundhar-04" target="_blank" rel="noopener" class="footer-social" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/sundharesan-a-884a1b328" target="_blank" rel="noopener" class="footer-social" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="mailto:iamsundhar04@gmail.com" class="footer-social" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
